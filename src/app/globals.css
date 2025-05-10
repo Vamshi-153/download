@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 222.2 84% 4.9%; /* Dark Gray/Black */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 180 100% 25%; /* Teal */
+    --primary-foreground: 0 0% 98%; /* White */
+    --secondary: 210 40% 96.1%; /* Light Gray (#F2F2F2 adjusted) */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark Gray */
+    --muted: 210 40% 98%; /* Lighter Gray */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Medium Gray */
+    --accent: 180 100% 25%; /* Teal */
+    --accent-foreground: 0 0% 98%; /* White */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214.3 31.8% 91.4%; /* Light Gray */
+    --input: 214.3 31.8% 91.4%; /* Light Gray */
+    --ring: 180 100% 25%; /* Teal */
+    --chart-1: 180 100% 25%; /* Teal */
+    --chart-2: 180 80% 35%;
+    --chart-3: 180 60% 45%;
+    --chart-4: 180 40% 55%;
+    --chart-5: 180 20% 65%;
+    --radius: 0.5rem;
+     /* Sidebar Specific - Adapt from main theme or keep distinct if needed */
+    --sidebar-background: 210 40% 98%; /* Lighter Gray */
+    --sidebar-foreground: 222.2 47.4% 11.2%; /* Dark Gray */
+    --sidebar-primary: 180 100% 25%; /* Teal */
+    --sidebar-primary-foreground: 0 0% 98%; /* White */
+    --sidebar-accent: 210 40% 92%; /* Slightly darker gray for hover */
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%; /* Dark Gray */
+    --sidebar-border: 214.3 31.8% 91.4%; /* Light Gray */
+    --sidebar-ring: 180 100% 25%; /* Teal */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* Dark Gray/Black */
+    --foreground: 0 0% 98%; /* White */
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 180 100% 35%; /* Brighter Teal for Dark Mode */
+    --primary-foreground: 0 0% 98%; /* White */
+    --secondary: 217.2 32.6% 17.5%; /* Darker Gray */
+    --secondary-foreground: 0 0% 98%; /* White */
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%; /* Lighter Gray Text */
+    --accent: 180 100% 35%; /* Brighter Teal */
+    --accent-foreground: 0 0% 98%; /* White */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217.2 32.6% 17.5%; /* Darker Gray */
+    --input: 217.2 32.6% 17.5%; /* Darker Gray */
+    --ring: 180 100% 35%; /* Brighter Teal */
+    --chart-1: 180 100% 35%; /* Brighter Teal */
+    --chart-2: 180 80% 45%;
+    --chart-3: 180 60% 55%;
+    --chart-4: 180 40% 65%;
+    --chart-5: 180 20% 75%;
+    --radius: 0.5rem;
+    /* Sidebar Specific Dark */
+    --sidebar-background: 222.2 84% 4.9%; /* Match main dark bg */
+    --sidebar-foreground: 0 0% 98%; /* White */
+    --sidebar-primary: 180 100% 35%; /* Brighter Teal */
+    --sidebar-primary-foreground: 0 0% 98%; /* White */
+    --sidebar-accent: 217.2 32.6% 22%; /* Slightly lighter dark gray */
+    --sidebar-accent-foreground: 0 0% 98%; /* White */
+    --sidebar-border: 217.2 32.6% 17.5%; /* Darker Gray */
+    --sidebar-ring: 180 100% 35%; /* Brighter Teal */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Apply minimalist font */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+}
